@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+    <title>Foody Plaza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />" -->
+
+
+</head>
+
+<body>
+    <header class="bd-color-ffe9cb">
+        <nav>
+            <div class="logo">
+                <a href="#">Foody Plaza</a>
+            </div>
+            <div class="menu">
+                <ul id="menulist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    </ul>
+            </div>
+            <div class="menu-icon" onclick="togglemenu()">
+                    <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="row odd bd-color-ffe9cb">
+            <div class="col-t">
+            <h2> Get your favourite food at your Doorstep</h2>
+            <button type="button">Order Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="col-i">
+            <img class="imgwidth" img src="back.png" alt="img"/>
+        </div>
+        </section>
+
+        <section class="row-sep">
+            <h2>Why to choose Foody plaza?</h2>
+            <div class="cols">
+                <div class="col-1">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>Fresh Food</p>
+                </div>
+                <div class="col-2">
+                    <i class="fa-solid fa-indian-rupee"></i>
+                    <p>Get 10% cashback on First 2 orders</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-regular fa-face-smile-beam"></i>
+                <p>Resonable Price</p>
+            </div>
+            <div class="col-4">
+                <i class="fa-solid fa-truck"></i>
+                <p>Fast Delivery</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="row even">
+            <div class="col-i m">
+                <img class="imgwidth" src="1.jpg" alt="">
+            </div>
+            <div class="col-t m">
+                <h1><center>Veg is our speciality</center></h1>
+                <p><center>We take particular care while selecting the ingredients for our range of veg meals. 
+                           From fresh vegetable to salads and breads we procure and prepare the 
+                           food ingredients on daily basis.</center></p>
+                           
+                    <p><center>We pride ourself in the high quality of our food and offer a 
+                               money back gurantee if you are satisfied with the quality of 
+                               our products.</center></p>
+                    <buton type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></buton>
+                    </div>
+            </section>
+
+
+            <section class="row even">
+                <div class="col-t m">
+                    <h3>Fried vegetable patty</h3>
+                    <p>Fried pieces  of vegetable nuggets available on packages of 3,4 and 6 pieces and a range of meal packages</p>
+                    <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="col-i m">
+                    <img class="imgwidth" src="2.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="row even">
+                <div class="col-i-m">
+                    <img class="imgwidth" src="3.jpg" alt="">
+                </div>
+                <div class="col-t-m">
+                    <h1><center>Vegetable sandwich</center></h1>
+                    <p>Fancy vegetable sandwich. Enjoy our vegetable sandwhich which is made from 100% wheat.</p>
+                    <button type="button"> Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <section class="row even">
+                <div class="col-t-m">
+                    <h3>How Hungry Are You?</h3>
+                    <p>From meals to light bites we provide our tasty portions in different size and ingredients.</p>
+                    <button type="button"> Order now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="col-i m">
+                    <img class="imgwidth" src="4.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="explore">
+                <button type="button">Explore more</button>
+            </section>
+            <section class="row-end">
+                <div>
+                    <h2>1M+</h2>
+                    <p>Order Delivered</p>
+                </div>
+                <div>
+                    <h2>92%</h2>
+                    <p>Postive Feedback</p>
+                </div>
+                <div>
+                    <h2>55</h2>
+                    <p>Cites</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="foot">
+                <P>&copy; 2023 Foody plaza</P>
+                <div class="social">
+
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instgram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-Linked-in"></i>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var menulist = document.getElementbyId("menulist");
+            menuList.style.max.height ="0px";
+            function togglemenu() 
+            {
+                if (menuList.style.maxHeight =="0px") {
+                    menuList.style.maxHeight="130px";
+                } else {
+                    menuList.style,maxHeight="0px";
+                }            
+            }
+            window.addEventListener("scroll",function () {
+                let header = document.querySelector("header");
+                header.classList.toggler("sticky", window.scrollY > 0);
+            })
+        </script>
+        
+</body>
+</html>
